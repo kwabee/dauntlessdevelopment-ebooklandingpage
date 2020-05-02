@@ -12,8 +12,6 @@
 
     <br/><br/>
 
-    
-
     <div class="container" style="max-width: 1000px;">
         <div class="row">
             <div class="col-sm-6" style="text-align: center;">
@@ -51,38 +49,54 @@
             <div class="col-sm-6" style="text-align: center;">
 
                 <div class="shadow p-3 mb-5 bg-white rounded" style="border: 1px solid #e0e0e0; text-align: left;">
-                    <form>
-                            <div class="form-group">
-                                <label for="exampleInputFirstName">First Name *</label>
-                                <input type="text" class="form-control" id="exampleInputFirstName" aria-describedby="firstnameHelp" placeholder="First Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputLastName">Last Name *</label>
-                                <input type="text" class="form-control" id="exampleInputLastName" aria-describedby="lastnameHelp" placeholder="Last Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail">Email *</label>
-                                <input type="text" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPhone">Phone *</label>
-                                <input type="text" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp" placeholder="Phone">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputCompanyName">Company Name</label>
-                                <input type="text" class="form-control" id="exampleInputCompanyName" aria-describedby="companynameHelp" placeholder="Company Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputJobTitle">Job Title</label>
-                                <input type="text" class="form-control" id="exampleInputJobTitle" aria-describedby="JobTitleHelp" placeholder="Job Title">
-                            </div>
+                    <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+                        
+                        <div class="form-group">
+                            <label for="first_nameinput">First Name *</label>
+                            <input type="text" class="form-control" id="first_name" name="first_name" aria-describedby="firstnameHelp" placeholder="First Name"/>
+                        </div>
 
-                            <div align="center">
-                                <button type="submit" class="btn btn-primary">Download My Free Ebook</button>
-                            </div>
+                        <div class="form-group">
+                            <label for="last_nameinput">Last Name *</label>
+                            <input type="text" class="form-control" id="last_name" name="last_name" aria-describedby="last_namehelp" placeholder="Last Name"/>
+                        </div>
 
-                      </form>
+                        <div class="form-group">
+                            <label for="emailinput">Email *</label>
+                            <input type="text" class="form-control" id="email" name="email" aria-describedby="emailhelp" placeholder="Email"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="custom_phoneinput">Phone *</label>
+                            <input type="text" class="form-control" id="custom_phone" name="custom_phone" aria-describedby="custom_phonehelp" placeholder="Phone"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="custom_companynameinput">Company Name *</label>
+                            <input type="text" class="form-control" id="custom_companyname" name="custom_companyname" aria-describedby="custom_companynamehelp" placeholder="Company Name"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="custom_jobtitleinput">Job Title *</label>
+                            <input type="text" class="form-control" id="custom_jobtitle" name="custom_jobtitle" aria-describedby="custom_jobtitlehelp" placeholder="Job Title"/>
+                        </div>
+                        
+                        <input id="webform_consent#BcfX_0" type="checkbox" name="webform[consent#BcfX-ver#SrQa]" value="true"/> <label for="webform_consent#BcfX_0">I agree to the processing of my personal data for marketing purposes.</label> 
+                        <!-- List token -->
+                        <!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+                        <input type="hidden" name="campaign_token" value="WHqZA" />
+                        <!-- Add subscriber to the follow-up sequence with a specified day (optional) -->
+                        <input type="hidden" name="start_day" value="0" />
+                        <!-- Subscriber button -->
+
+                        <div align="center">
+                            <input type="submit" class="btn btn-primary" value="Download My Free Ebook" />
+                        </div>
+
+                    </form>
                 </div>
+
+
 
                 <h2>As seen in</h2>
                 <img src="images/dd-brandsworkedwith.png" class="img-fluid" />
